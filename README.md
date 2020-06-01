@@ -29,5 +29,7 @@ As nd gets closer to maxn, method 2 gets better and better <br>
 ## General Explanations
 - Infinity in the program is chosen to be 1e9
 - Assumption: no negative integers in the input
+  - implemented method 1 threats all negative integers as non-negative (active in the code)
+  - implemented method 2 does not work with negative integers
 - time complexity: O(n + nd * sqrt(maxn))
 - space complexity: O(n)
