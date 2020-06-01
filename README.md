@@ -24,7 +24,7 @@ default file name to be used when no file name is given is "input.txt"
 If nd is low, then method 1 would be better <br>
 As nd gets closer to maxn, method 2 gets better and better <br>
 
- -> I have implemented both, but chosen method 1 to use
+ **-> I have implemented both, but chosen method 1 to use**
 
 ## General Explanations
 - Infinity in the program is chosen to be 1e9
