@@ -27,6 +27,7 @@ As nd gets closer to maxn, method 2 gets better and better <br>
  -> I have implemented both, but chosen method 1 to use
 
 ## General Explanations
-- infinity in the program is chosen to be 1e9
+- Infinity in the program is chosen to be 1e9
+- Assumption: no negative integers in the input
 - time complexity: O(n + nd * sqrt(maxn))
 - space complexity: O(n)
