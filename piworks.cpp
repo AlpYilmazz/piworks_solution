@@ -44,7 +44,12 @@ void print_pyramid(){
 	cout << "dp: " << endl << endl;
 	for(vector<int>& row : dp){
 		for(int num : row){
-			cout << num << " ";
+			if(num != -INF){
+				cout << num << " ";
+			}
+			else{
+				cout << "XXXX" << " ";
+			}
 		}
 		cout << endl;
 	}
@@ -168,7 +173,8 @@ int solve(){
 
 			dp[i][j] = -INF;
 			if(!is_prime[num]){
-				int up1, up2, up3;
+				int up1, up2;
+				// int up3;
 				int pathsum = -INF;
 
 				// - Check all possible paths that can continue towards [i][j]
@@ -183,10 +189,10 @@ int solve(){
 					pathsum = max(up2, pathsum);
 				}
 
-				if(j+1 < (int)pyramid[i-1].size()){
+				/*if(j+1 < (int)pyramid[i-1].size()){
 					up3 = dp[i-1][j+1];
 					pathsum = max(up3, pathsum);
-				}
+				}*/
 				
 				// - There exists a path to element [i][j]
 				// - Because [i][j] is not prime
